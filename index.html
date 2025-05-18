@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="rw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urubuga rw'Amakuru ku Kuhira</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+
+        .hero {
+            background: url(imagee.JPEG) no-repeat center center/cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            background: darkcyan;
+            padding: 20px;
+            border-radius: 15px;
+        }
+
+        .section {
+            padding: 60px 20px;
+        }
+        #contact {
+    background-color: #f8f9fa;
+    padding: 60px 20px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    background: darkorange;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+#contact h2 {
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+#contact .form-control {
+    height: 45px;
+    border-radius: 8px;
+}
+
+#contact textarea.form-control {
+    height: auto;
+    border-radius: 8px;
+}
+
+#contact .btn-primary {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+}
+footer {
+    font-size: 0.95rem;
+    background-color: #212529;
+}
+
+footer a:hover {
+    text-decoration: underline;
+    color: #0d6efd;
+}
+/* Topbar styling */
+.topbar {
+    background-color: #f8f9fa;
+    font-size: 0.95rem;
+    padding: 8px 0;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.topbar i {
+    color: #0d6efd; /* Bootstrap primary blue for icons */
+    margin-right: 6px;
+}
+
+.topbar a {
+    color: #343a40;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.topbar a:hover {
+    color: #0d6efd;
+    text-decoration: underline;
+}
+.about-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.about-main {
+    flex: 2;
+}
+
+.about-sidebar {
+    flex: 1;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-left: 4px solid darkcyan;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+/* Responsive stacking for smaller screens */
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+    }
+
+    .about-sidebar {
+        border-left: none;
+        border-top: 4px solid darkcyan;
+        margin-top: 20px;
+    }
+}
+
+    
+    </style>
+</head>
+
+<body>
+<!-- Topbar -->
+<div class="topbar">
+    <div class="container d-flex justify-content-between align-items-center">
+        <div>
+            <i class="bi bi-telephone-fill"></i> Toll Free: 1234
+            <span class="mx-3">|</span>
+            <i class="bi bi-envelope-fill"></i> info@kuhira.rw
+        </div>
+        <div>
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+        </div>
+    </div>
+</div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="logo.png" alt="" style="width: 99px;"> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#">Ahabanza</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#plants">Ibimera</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#methods">Uburyo bwo Kuhira</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Tuvugishe</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div data-aos="zoom-in">
+            <h1>Ikaze ku Rubuga rw'Amakuru ku Kuhira</h1>
+            <p>Menya uko wakuhira ibimera bitandukanye ukurikije ubwoko bwabyo n'ibidukikije.</p>
+        </div>
+    </section>
+<!-- About Us Section -->
+<section class="about-section">
+    <div class="container">
+        <h2 class="text-center">Ibyerekeye Urubuga rw'Amakuru ku Kuhira</h2>
+        <p>
+            Urubuga rwacu rwashinzwe hagamijwe gutanga amakuru yizewe kandi afasha abahinzi mu bijyanye no kuhira ibihingwa. 
+            Twiyemeje gufasha abahinzi b’Abanyarwanda kumenya uburyo butandukanye bwo kuhira, hakurikijwe ubwoko bw’igihingwa, igihe cy’ihinga n’akarere giherereyemo.
+        </p>
+        <p>
+            Duhuza ubumenyi bw'ubuhinzi bugezweho n’ikoranabuhanga kugira ngo dukemure ibibazo abahinzi bahura na byo mu gihe cyo kuhira. 
+            Urubuga rutanga amakuru ku bimera, uburyo bwo kuhira nka drip, sprinkler, surface na subsurface irrigation, ndetse n’uburyo bwo gukoresha amazi neza.
+        </p>
+        <p>
+            Intego yacu ni uguteza imbere ubuhinzi burambye, bwongera umusaruro kandi bukoresha amazi mu buryo buboneye. 
+            Twizera ko amakuru dusangiza azafasha abahinzi guhitamo uburyo bukwiye bwo kuhira bitewe n’ibyo bahinga n’ibidukikije bibakikije.
+        </p>
+    </div>
+</section>
+    <!-- Plants Section -->
+    <section id="plants" class="section bg-light" data-aos="fade-up">
+        <div class="container">
+            <h2 class="text-center mb-4">Uko Wahira Ibimera Bitandukanye</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="vege.JPEG" alt="" style="width: 330px;">
+                            <h5 class="card-title">Imboga</h5>
+                            <p class="card-text">Uburyo bwiza bwo kuhira imboga nk'inyanya, dodo, n'ibirayi.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="fruits.JPEG" alt="" style="width: 330px;">
+                            <h5 class="card-title">Imbuto</h5>
+                            <p class="card-text">Gukoresha drip irrigation mu gihingwa cy’imbuto zitandukanye.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="flower.JPEG" alt="" style="width: 330px;">
+                            <h5 class="card-title">Indabo</h5>
+                            <p class="card-text">Hitamo sprinkler cyangwa drip bitewe n’ubwoko bw’indabo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Methods Section -->
+<section id="methods" class="section bg-white" data-aos="fade-right">
+    <div class="container">
+        
+        <h2 class="text-center mb-5">Uburyo Bukoreshwa mu Kuhira</h2>
+        <div class="row">
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in">
+                <div class="card h-100 shadow">
+                    <img src="drip.jpeg" class="card-img-top" alt="Drip Irrigation">
+                    <div class="card-body">
+                        <h5 class="card-title">Drip Irrigation (Kuhira utuyoka)</h5>
+                
+                        <p class="card-text">Ni uburyo bukoreshwa mu kuhira buca munsi y’ubutaka cyangwa hejuru h’inkingi, aho amazi atemba gahoro agera ku mizi y’igihingwa. Bukoresha amazi make kandi butanga umusaruro mwinshi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="100">
+                <div class="card h-100 shadow">
+                    <img src="spri.jpeg" class="card-img-top" alt="Sprinkler Irrigation">
+                    <div class="card-body">
+                        <h5 class="card-title">Sprinkler (Kuhira nk’imvura)</h5>
+                
+                        
+                        <p class="card-text">Ubu buryo busa n’imvura isanzwe, aho amazi asakazwa mu mirima hifashishijwe ibyuma bya sprinkler. Bukoreshwa ahanini ku ndabo n'ibimera bisaba amazi menshi hejuru.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="200">
+                <div class="card h-100 shadow">
+                    <img src="sur.jpeg" class="card-img-top" alt="Surface Irrigation">
+                    <div class="card-body">
+                        <h5 class="card-title">Surface Irrigation (Kuhira usuka ku butaka)</h5>
+                     
+                        <p class="card-text">Amazi ashyirwa ku buso bw’ubutaka, akagenda yisuka kugeza ku mizi. Ni bwo buryo bwa kera kandi bworoshye, ariko bukenera amazi menshi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-3 mb-4" data-aos="zoom-in" data-aos-delay="300">
+                <div class="card h-100 shadow">
+                    <img src="sub.jpeg" class="card-img-top" alt="Subsurface Irrigation">
+                    <div class="card-body">
+                        <h5 class="card-title">Subsurface Irrigation (Kuhira munsi y'ubutaka)</h5>
+                        
+                        <p class="card-text">Amazi anyuzwa mu miyoboro iri munsi y’ubutaka, agera ku mizi y'ibimera atabanje kujya hejuru. Akarusho ni uko amazi adatakara cyane kandi ubuhinzi bugakorwa neza mu turere dufite amazi make.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+</section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light" data-aos="fade-left">
+        <div class="container">
+            <h2 class="text-center mb-4">Tuvugishe</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Amazina</label>
+                    <input type="text" class="form-control" id="name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Ubutumwa</label>
+                    <textarea class="form-control" id="message" rows="4"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Ohereza</button>
+            </form>
+        </div>
+    </section>
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-4 pb-3 mt-5">
+    <div class="container text-center">
+        <p class="mb-1">© 2025 Urubuga rw’Amakuru ku Kuhira. Uburenganzira bwose burambutse.</p>
+        <p class="mb-0">
+            Dukurikire kuri:
+            <a href="#" class="text-white text-decoration-none mx-2">Facebook</a> |
+            <a href="#" class="text-white text-decoration-none mx-2">Twitter</a> |
+            <a href="#" class="text-white text-decoration-none mx-2">Instagram</a>
+        </p>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
